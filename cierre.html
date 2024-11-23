@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cierre de Caja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cierre de Caja</h1>
+    </header>
+
+    <!-- Contenedor para centralizar el contenido -->
+    <div class="container">
+        <main>
+            <h2>Resumen de Caja</h2>
+
+            <!-- Tabla de Cierre de Caja -->
+            <table id="cierre-table">
+                <thead>
+                    <tr>
+                        <th>Proceso</th>
+                        <th>Tipo de Vehículo</th>
+                        <th>Placa</th>
+                        <th>Total</th>
+                        <th>Método de Pago</th>
+                    </tr>
+                </thead>
+                <tbody id="cierre-body">
+                    <!-- Los registros de pago se cargarán dinámicamente -->
+                </tbody>
+            </table>
+
+            <!-- Totales -->
+            <h3>Total Efectivo: <span id="total-efectivo">0</span></h3>
+            <h3>Total QR: <span id="total-qr">0</span></h3>
+            <h3>Total De Caja: <span id="total-servicios">0</span></h3>
+            <h3>Total Vehículos: <span id="total-vehiculos">0</span></h3>
+            <h3>Total en Descuentos: <span id="total-descuentos">0</span></h3>
+
+            <!-- Botones -->
+            <button onclick="window.location.href='index.html'">Registrar Nuevo Vehículo</button>
+            <button onclick="window.location.href='historial.html'">Ver Historial</button>
+            <button id="clear-cierre" onclick="clearCierre()">Limpiar Cierre de Caja</button>
+            <button id="update-totals" onclick="updateTotals()">Actualizar Totales</button>
+        </main>
+    </div> <!-- Fin del contenedor -->
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

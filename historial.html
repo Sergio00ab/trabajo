@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Vehículos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Historial de Vehículos</h1>
+    </header>
+
+    <!-- Contenedor para centralizar el contenido -->
+    <div class="container">
+        <main>
+            <h2>Lista de Vehículos Registrados</h2>
+            <button id="clear-history" onclick="clearHistory()">Limpiar Historial</button> <!-- Botón para limpiar -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Placa</th>
+                        <th>Nombre del Dueño</th>
+                        <th>Proceso</th>
+                        <th>Total</th>
+                        <th>Hora de Llegada</th>
+                        <th>Hora de Entrega</th>
+                        <th>Observaciones</th> <!-- Agregar encabezado de Observaciones -->
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="history-body">
+                    <!-- Las filas de historial se llenarán dinámicamente -->
+                </tbody>
+            </table>
+
+            <button onclick="window.location.href='index.html'">Registrar Nuevo Vehículo</button>
+            <button onclick="window.location.href='cierre.html'">Cierre de Caja</button>
+        </main>
+    </div> <!-- Fin del contenedor -->
+
+    <script src="scripts.js"></script>
+</body>
+</html>

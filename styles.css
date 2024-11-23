@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url(44521b6e-83c1-4961-922f-e77fea2756c0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: beige; /* Color del texto */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-image: url(92a21e56-7c2a-4f90-bfcb-a89ddf32996b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-image: url(d3e0b504-22b0-4458-b7e2-5e2ebfe414a3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Títulos */
+h1, h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  color: rgb(0, 0, 0);
+  display: block;
+  margin-top: 19px;
+  font-weight: bold;
+}
+
+/* Inputs, Selects, Textareas */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Botones */
+button {
+  background-color: #1b1b1b;
+  color: rgb(24, 169, 236);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+td {
+  color: rgb(0, 0, 0);
+}
+
+/* Media Queries */
+
+/* Dispositivos móviles (máximo 600px) */
+@media (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+
+  /* Tablas: desplazamiento horizontal en móviles */
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap; /* Evitar que el texto se envuelva */
+  }
+
+  th, td {
+    text-align: left;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  h1, h2 {
+    font-size: 18px;
+  }
+
+  button {
+    width: 100%; /* Botones ocupan todo el ancho en móviles */
+  }
+}
+
+/* Tabletas (601px a 768px) */
+@media (max-width: 768px) and (min-width: 601px) {
+  main {
+    padding: 15px;
+  }
+
+  th, td {
+    font-size: 16px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Pantallas grandes (≥ 769px) */
+@media (min-width: 769px) {
+  main {
+    padding: 20px;
+  }
+
+  th, td {
+    font-size: 18px;
+  }
+
+  button {
+    width: auto;
+  }
+}
+
+h3 {
+  color: beige;
+}

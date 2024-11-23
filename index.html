@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autolavado El Diamante - Registro de Vehículo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Autolavado El Diamante</h1>
+    </header>
+
+    <!-- Contenedor para centralizar el contenido -->
+    <div class="container">
+        <main>
+            <h2>Registrar Vehículo</h2>
+            <form id="vehicle-form">
+                <label for="vehicle-type">Tipo de Vehículo:</label>
+                <select id="vehicle-type" required>
+                    <option value="automovil">Automóvil</option>
+                    <option value="camioneta">Camioneta</option>
+                    <option value="moto">Moto</option>
+                </select>
+
+                <label for="license-plate">Número de Placa:</label>
+                <input type="text" id="license-plate" required>
+
+                <label for="owner-name">Nombre del Propietario:</label>
+                <input type="text" id="owner-name" required>
+
+                <label for="owner-phone">Número de Celular:</label>
+                <input type="tel" id="owner-phone" required>
+
+                <label for="observations">Observaciones:</label>
+                <textarea id="observations"></textarea>
+
+                <label for="discount">Descuento%:</label>
+                <input type="number" id="discount" min="0" max="100" value="0">
+
+                <!-- ... otros campos ... -->
+
+                <label for="process">Seleccione el Proceso:</label>
+                <select id="process" name="process" onchange="toggleCustomProcess()">
+                    <option value="sencillo">Lavado Sencillo</option>
+                    <option value="brillado-vip">Brillado VIP</option>
+                    <option value="premium">Lavado Premium</option>
+                    <option value="diamante">Lavado Diamante</option>
+                    <option value="detailing">Detailing Diamante</option>
+                    <option value="ceramico">Cerámico Diamante</option>
+                    <option value="personalizado">Proceso Personalizado</option>
+                </select>
+
+                <div id="custom-services" style="display: none;">
+                    <h3>Selecciona los Servicios Adicionales</h3>
+                    <div>
+                        <label>
+                            <input type="checkbox" class="custom-service" data-price="50000" /> Motor VIP (50.000)
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" class="custom-service" data-price="80000" /> Motor Diamante (80.000)
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" class="custom-service" data-price="70000" /> Chasis Profesional (70.000)
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" class="custom-service" data-price="27000" /> Exterior (27.000)
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" class="custom-service" data-price="27000" /> Interior (27000)
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" class="custom-service" data-price="100000" /> Cojineria Profesional (100000)
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" class="custom-service" data-price="100000" /> Techo Profesional (100000)
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" class="custom-service" data-price="70000" /> Brillada Farolas (70000)
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" class="custom-service" data-price="80000" /> Descontaminacion de Vidrios (80000)
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" class="custom-service" data-price="100000" /> Brillada Profesional Vidrios (100000)
+                        </label>
+                    </div>
+                    <div>
+                        <h4>Total de Servicios Seleccionados: <span id="total-custom-services">0</span></h4>
+                    </div>
+                </div>
+                <button type="submit">Registrar Vehículo</button>
+            </form>
+
+            <!-- Botones -->
+            <button onclick="window.location.href='historial.html'">Ver Historial</button>
+            <button onclick="window.location.href='cierre.html'">Cierre de Caja</button>
+        </main>
+    </div> <!-- Fin del contenedor -->
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
